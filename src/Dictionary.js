@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Results from "./Results";
 import axios from "axios";
+import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
@@ -13,7 +13,8 @@ export default function Dictionary(props) {
   }
 
   function search() {
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    // documentation: https://dictionaryapi.dev/e
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
 

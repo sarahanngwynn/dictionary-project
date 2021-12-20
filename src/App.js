@@ -1,6 +1,6 @@
+import logo from "./logo.png";
 import "./App.css";
 import Dictionary from "./Dictionary";
-import logo from "./logo.png";
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
           <Dictionary defaultKeyword="sunset" />
         </main>
         <footer className="App-footer">
-          <small>Coded by Sarah Gwynn</small>
+          <small>Coded by SheCodes</small>
         </footer>
       </div>
     </div>
